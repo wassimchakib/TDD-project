@@ -1,7 +1,7 @@
 require_relative '../solver'
 
 describe Solver do
-  context "Factorial Function Unit Testing"
+  context 'Factorial Function Unit Testing'
   it 'Should return 120' do
     solver = Solver.new
     result = solver.factorial(5)
@@ -21,22 +21,21 @@ describe Solver do
 end
 
 describe Solver do
-  context "Reverse Function Unit Testing"
+  context 'Reverse Function Unit Testing'
   it 'Should return trem' do
     solver = Solver.new
-    result = solver.reverse("mert")
-    expect(result).to eq("trem")
+    result = solver.reverse('mert')
+    expect(result).to eq('trem')
   end
 
   it 'Should return missaw' do
     solver = Solver.new
-    result = solver.reverse("wassim")
-    expect(result).to eq("missaw")
+    result = solver.reverse('wassim')
+    expect(result).to eq('missaw')
   end
   it 'Should return tsurt' do
     solver = Solver.new
-    result = solver.reverse("trust")
-    expect(result).to eq("tsurt")
+    result = solver.reverse('trust')
+    expect(result).to eq('tsurt')
   end
 end
-
