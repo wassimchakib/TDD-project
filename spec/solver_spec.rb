@@ -1,3 +1,5 @@
+require_relative '../solver'
+
 describe Solver do
   it 'Should return 120' do
     solver = Solver.new
@@ -13,6 +15,6 @@ describe Solver do
   it 'Should return 40,320' do
     solver = Solver.new
     result = solver.factorial(8)
-    expect(result).to eq(40310)
+    expect(result).to eq(40_320)
   end
 end
