@@ -59,7 +59,7 @@ describe Solver do
     result = solver.fizzbuzz(15)
     expect(result).to eq('fizzbuzz')
   end
-  
+
   it 'Should return "7"' do
     solver = Solver.new
     result = solver.fizzbuzz(7)

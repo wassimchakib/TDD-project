@@ -10,15 +10,14 @@ class Solver
   end
 
   def fizzbuzz(number)
-    if number % 5 == 0 && number % 3 == 0
-      return "fizzbuzz"
-    elsif number % 5 == 0
-      return "buzz"
-    elsif number % 3 == 0
-      return "fizz"
+    if (number % 5).zero? && (number % 3).zero?
+      'fizzbuzz'
+    elsif (number % 5).zero?
+      'buzz'
+    elsif (number % 3).zero?
+      'fizz'
     else
-      return number.to_s
+      number.to_s
     end
   end
-
 end
